@@ -1,20 +1,10 @@
-# Travis' solution
-def sumAll(lst):
-    highest = max(lst)
-    lowest = min(lst)
+"""We'll pass you an array of two numbers.
+Return the sum of those two numbers plus the sum of all the numbers between them.
+The lowest number will not always come first.
+For example, sumAll([4,1]) should return 10
+because sum of all the numbers between 1 and 4 (both inclusive) is 10"""
 
-    total = 0
 
-    while lowest <= highest:
-        total += lowest
-        lowest += 1
-
-    return total
-
-result = sumAll([1, 10])
-print(result)
-
-# My solution
 def sumAll(lst):
     start, end = min(lst), max(lst)
     total = sum(range(start, end + 1))
