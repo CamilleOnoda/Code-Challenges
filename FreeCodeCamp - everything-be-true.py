@@ -14,5 +14,8 @@ def truthCheck(collection, pre):
        return False
   return True
 
-result = truthCheck([{"name": "Quincy", "username": "QuincyLarson"}, {"name": "Naomi", "username": "nhcarrigan"}, {"name": "Camperbot"}], "username")
+result = truthCheck([{"name": "Quincy", "username": "QuincyLarson"}, 
+                     {"name": "Naomi", "username": "nhcarrigan"}, 
+                     {"name": "Camperbot"}], "username")
 print(result)
+
